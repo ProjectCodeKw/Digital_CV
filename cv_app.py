@@ -180,53 +180,7 @@ class CV_App():
         st.markdown(f'{self.text_format("☑️ PERSONAL PROJECTS:", txt_format=0, color="white", size="25")}', unsafe_allow_html=True)
         self.show_info(self.projects, emojy='- ', txt_format=0, year=False)
 
-        
-def Asmaa_cv():
-    
-    app = CV_App('Asmaa Alamzi', 'AsmaaAlazmi907@gmail.com', "Computer Engineer Student at Kuwait University",\
-        'i_loading.png', 'CV.pdf', "+965-97756439")
-
-    app.set_courses({"📱 Android app development using Java,  Kuwait Codes":['2022',""],
-            "🎮 Game development using Unity-Engine, Unicode course from Coded Kw": ['2022', ""],
-            "🤖 Arduino, CPES":["2022", ''], 
-            "📱 Flutter app development, Unicode":['2022',''],
-            '🖨️ 3D printing, KARS':['2023','']
-            })
-
-    app.set_languages({'Arabic': ['🔊 Native speaker'],
-            'English':['🔉 Highly proficient in speaking & writing']})
-
-    app.set_projects({
-            "Python workshop leaderboard app | [➡️](https://projectcodekw-python-leaderboard-app-lnwjcg.streamlit.app/)": ['2023',""],
-            "Grade Calculator | 🔜": ['2023',""],
-            'MajorSheety | 🔜':['2023', '']
-                })
-
-    app.set_skills({"Python programming" : [''],
-            "Flutter app development" : [''],
-            "Streamlit data science applications" : [''],
-            "Digital art" :  [''],
-            "Arduino" :  [''],
-            "Unity game development" : [''],
-            "Using virtual machines" : [''],
-            })
-
-    app.set_work_background({"Mentor for game development course at Coded Kw" : [" 2022", ''],
-            "A member of Computer Engineering Society (CPES)" : ['2022',""],
-            "Treasurer of Kuwait University AI & Robotics Society (KARS)" : ['2023',""],
-            "Creator of Project Code Kw group" : ['2023'," *_Project code is a group of Kuwait university students that aim to help \
-                    the programming community in Kuwait.to learn more visit the following:_*",\
-                            "> [📸 INSTAGRAM ](https://www.instagram.com/projectcodekw/)",
-                            "> [📺 YOUTUBE ](https://www.instagram.com/projectcodekw/)"]
-            })
-            
-    app.set_workshops({
-                'Online workshop for KU students regarding OOP course':['2022-2023',''],
-                "CPES's Python chatbot workshop":['2023',''],
-                "KARS's Python basics workshop":['2023',''],
-            })
-
-    return app
+     
 
 def Human_cv():    
     app = CV_App('Human AlHuman', 'Human986@work.com', "Computer Engineer Student at Kuwait University",\
