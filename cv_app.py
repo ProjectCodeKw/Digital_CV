@@ -1,5 +1,6 @@
 from pathlib import Path
 import streamlit as st
+import streamlit_extras
 from streamlit_extras import add_vertical_space as avs
 
 class CV_App():
