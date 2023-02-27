@@ -59,25 +59,25 @@ class CV_App():
         if line_type == 0:
             l1, l2, l3 = st.columns(3, gap='large')
             with l1:
-                st.markdown(self.text_format("_"*19, color=color), unsafe_allow_html=True)
+                st.markdown("---")
 
             with l2:
                 st.markdown(" ")
 
             with l3:
-                    st.markdown(self.text_format("_"*19, color=color), unsafe_allow_html=True)
+                   st.markdown("---")
         elif line_type == 1:
             l1, l2, l3 = st.columns(3, gap='small')
             with l1:
                 st.markdown(' ')
 
             with l2:
-                st.markdown(self.text_format("_"*22, color=color), unsafe_allow_html=True)
+                st.markdown("---")
 
             with l3:
                 st.markdown('')
         else:
-            st.markdown(self.text_format("_"*72, color=color), unsafe_allow_html=True)
+            st.markdown("---")
 
 
     def show_info(self, info: dict, emojy: str , txt_format = 0, color = 'white', year = True):
