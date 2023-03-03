@@ -58,7 +58,7 @@ class CV_App():
     def lines(self, line_type: int, color = "#A2A2A2"):
         if line_type == None:
             pass
-        finally:
+        else:
             st.markdown("---")
 
 
