@@ -56,27 +56,9 @@ class CV_App():
             return f'<div style=" color:{color}; font-size: {size}px;  text-align: center; ">  {txt}   </div>'
 
     def lines(self, line_type: int, color = "#A2A2A2"):
-        if line_type == 0:
-            l1, l2, l3 = st.columns(3, gap='large')
-            with l1:
-                st.markdown("---")
-
-            with l2:
-                st.markdown(" ")
-
-            with l3:
-                   st.markdown("---")
-        elif line_type == 1:
-            l1, l2, l3 = st.columns(3, gap='small')
-            with l1:
-                st.markdown(' ')
-
-            with l2:
-                st.markdown("---")
-
-            with l3:
-                st.markdown('')
-        else:
+        if line_type == None:
+            pass
+        finally:
             st.markdown("---")
 
 
